@@ -1,0 +1,155 @@
+<html>
+
+<head>  </head>
+
+<body>
+
+
+<script type ="text/javascript">
+
+		img1= new Image(), img1.src="lisboa.jpg";
+		img2= new Image(); img2.src="madrid.png";
+		img3= new Image(); img3.src="paris.jpg";
+		img4= new Image(); img4.src="istambul.webp";
+
+var Local1,Local2;
+
+function distancia(){
+		
+		if ( (Local1=='Lisboa') && (Local2=='Lisboa') ) {
+			document.forms[0].elements[0].value=0;
+			um.src=img1.src; dois.src=""; tres.src=""; quatro.src= ""; 
+			return;
+		}
+
+
+		if ((Local1=='Lisboa') && (Local2=='Madrid') ) {
+			document.forms[0].elements[0].value=600;
+			um.src=img1.src;dois.src=img2.src;tres.src=""; quatro.src= "";
+			return;
+		}
+
+		if ((Local1=='Lisboa') && (Local2=='Paris') ) {
+			document.forms[0].elements[0].value=1600;
+			um.src=img1.src; dois.src=img2.src; tres.src=img3.src; quatro.src= "";
+			return;
+		}
+
+		
+		if ((Local1=='Lisboa') && (Local2=='Istambul') ) {
+			document.forms[0].elements[0].value=4600;
+			um.src=img1.src; dois.src=img2.src; tres.src=img3.src; quatro.src=img4.src
+			return;
+		}
+	
+	
+		if ((Local1=='Madrid') && (Local2=='Madrid') ) { 
+			document.forms[0].elements[0].value=0; 
+			um.src=img2.src; dois.src=""; tres.src=""; quatro.src= "";
+			return; 
+		}
+		
+		if ((Local1=='Madrid') && (Local2=='Lisboa') ){ 
+			document.forms[0].elements[0].value=600; 
+			um.src=img2.src; dois.src=img1.src; tres.src=""; quatro.src= "";
+			return;
+		}
+		
+		if ((Local1=='Madrid') && (Local2=='Paris') ) { 
+			document.forms[0].elements[0].value=1000; 
+			um.src=img2.src; dois.src=img3.src; tres.src=""; quatro.src= "";
+			return; 
+		}
+
+		
+		if ((Local1=='Madrid') && (Local2=='Istambul') ) { 
+			document.forms[0].elements[0].value=4000; 
+			um.src=img2.src; dois.src=img3.src; tres.src=img4.src; quatro.src= "";
+			return; 
+		}
+
+		if ((Local1=='Paris') && (Local2=='Paris') ) { 
+			document.forms[0].elements[0].value=0; 
+			um.src=img3.src; dois.src=""; tres.src=""; quatro.src= "";
+			return;}
+		
+		if ((Local1=='Paris') && (Local2=='Lisboa') ) { 
+			document.forms[0].elements[0].value=1600; 
+			um.src=img3.src; dois.src=img2.src; tres.src=img1.src; quatro.src= "";  
+			return;
+		}
+		
+		if ((Local1=='Paris') && (Local2=='Madrid') ) { 
+			document.forms[0].elements[0].value=1000; 
+			um.src=img3.src; dois.src=img2.src; tres.src=""; quatro.src= "";
+			return; 
+		}
+
+		if ((Local1=='Paris') && (Local2=='Istambul') ) { 
+			document.forms[0].elements[0].value=3000; 
+			um.src=img3.src; dois.src=img4.src; tres.src=""; quatro.src= "";
+			return; 
+		}
+
+		if ((Local1=='Istambul') && (Local2=='Istambul') ) { 
+			document.forms[0].elements[0].value=0; 
+			um.src=img4.src; dois.src=""; tres.src=""; quatro.src= "";
+			return;}
+		
+		if ((Local1=='Istambul') && (Local2=='Lisboa') ) { 
+			document.forms[0].elements[0].value=4600; 
+			um.src=img4.src; dois.src=img3.src; tres.src=img2.src; quatro.src=img1.src;  
+			return;
+		}
+		
+		if ((Local1=='Istambul') && (Local2=='Madrid') ) { 
+			document.forms[0].elements[0].value=4000; 
+			um.src=img4.src; dois.src=img3.src; tres.src=img2.src; quatro.src= "";
+			return; 
+		}
+
+		if ((Local1=='Istambul') && (Local2=='Paris') ) { 
+			document.forms[0].elements[0].value=3000; 
+			um.src=img4.src; dois.src=img3.src; tres.src=""; quatro.src= "";
+			return; 
+		}
+		
+	
+}
+
+</script>
+
+<input type="button" value="Lisboa"  onclick=" Local1='Lisboa';  ";>
+<input type="button" value="Madrid"    onclick=" Local1='Madrid';    ";>
+<input type="button" value="Paris" onclick=" Local1='Paris'; ";>
+<input type="button" value="Istambul" onclick=" Local1='Istambul'; ";>
+
+<input type="button" value=" -> "    onclick="distancia()";>
+
+<input type="button" value="Lisboa"  onclick="Local2='Lisboa';";>
+<input type="button" value="Madrid"    onclick="Local2='Madrid';";>
+<input type="button" value="Paris" onclick="Local2='Paris';";>
+<input type="button" value="Istambul" onclick="Local2='Istambul';";>
+
+<br>
+
+<h2>Distancia:</h2>
+
+<form>
+<input type="text" size='10' >
+</form>
+
+<h2>Caminho:</h2>
+
+<img src = "" border="0" width=200 height=200 name="um">
+<img src = "" border="0" width=200 height=200 name="dois">
+<img src = "" border="0" width=200 height=200 name="tres">
+<img src = "" border="0" width=200 height=200 name="quatro">
+
+</body>
+
+</html>
+
+
+
+

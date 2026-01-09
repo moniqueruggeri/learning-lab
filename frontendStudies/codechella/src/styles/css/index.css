@@ -1,0 +1,249 @@
+/* Cores */
+/* Fonts */
+/* Pesos */
+/* Tamnanhos */
+.bannerHeader {
+  position: relative;
+}
+.bannerHeader .bannerBg {
+  background-image: url("../../assets/img/banner-1-mb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 72px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.bannerHeader .headerContainer {
+  position: relative;
+  margin: auto;
+  padding: 72px 32px 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  white-space: nowrap;
+}
+.bannerHeader .headerContainer .buttonHeader {
+  background-color: #FFD700;
+  color: #4682B4;
+}
+.bannerHeader .headerContainer .bannerDate {
+  text-align: center;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 110px;
+}
+.bannerHeader .headerContainer .bannerDate h1 {
+  color: #F5F5F5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  white-space: nowrap;
+}
+.bannerHeader .headerContainer .bannerDate h1 span {
+  font-weight: 900;
+}
+.bannerHeader .headerContainer .bannerDate h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F5F5F5;
+  text-transform: uppercase;
+}
+
+.cards .presentation {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.cards .presentation p {
+  text-align: justify;
+}
+.cards .presentation .textEmphasis {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  color: #FF4500;
+}
+.cards .presentation .textEmphasis span {
+  color: #4682B4;
+}
+.cards .cardTickets {
+  box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.cards .cardTickets .titles {
+  color: #FF4500;
+}
+.cards .cardTickets .button {
+  background-color: #FF4500;
+  color: #F5F5F5;
+}
+.cards .cardVip {
+  color: #F5F5F5;
+  background-color: #FF4500;
+}
+.cards .cardVip .titles {
+  color: #FFD700;
+}
+.cards .cardVip .button {
+  background-color: #FFD700;
+  color: #FF4500;
+}
+.cards .cardCamping .titles {
+  color: #4682B4;
+}
+.cards .cardCamping .button {
+  background-color: #4682B4;
+  color: #F5F5F5;
+}
+
+.lineUp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.lineUp .lineUpBanner {
+  background-image: url("../../assets/img/banner-2-mb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 32px 155px 32px;
+}
+.lineUp .lineUpBanner .lineUpTitle {
+  line-height: 80%;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #F5F5F5;
+}
+.lineUp .lineUpBanner img {
+  color: #FFD700;
+  width: 40%;
+}
+.lineUp .sabado, .lineUp .domingo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.lineUp .sabado h2, .lineUp .domingo h2 {
+  z-index: -1;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.7;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+}
+.lineUp .sabado .sabadoLineUp, .lineUp .sabado .domingoLineUp, .lineUp .domingo .sabadoLineUp, .lineUp .domingo .domingoLineUp {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(1),
+.lineUp .sabado .sabadoLineUp li:nth-child(2), .lineUp .sabado .domingoLineUp li:nth-child(1),
+.lineUp .sabado .domingoLineUp li:nth-child(2), .lineUp .domingo .sabadoLineUp li:nth-child(1),
+.lineUp .domingo .sabadoLineUp li:nth-child(2), .lineUp .domingo .domingoLineUp li:nth-child(1),
+.lineUp .domingo .domingoLineUp li:nth-child(2) {
+  font-weight: 900;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(3),
+.lineUp .sabado .sabadoLineUp li:nth-child(4), .lineUp .sabado .domingoLineUp li:nth-child(3),
+.lineUp .sabado .domingoLineUp li:nth-child(4), .lineUp .domingo .sabadoLineUp li:nth-child(3),
+.lineUp .domingo .sabadoLineUp li:nth-child(4), .lineUp .domingo .domingoLineUp li:nth-child(3),
+.lineUp .domingo .domingoLineUp li:nth-child(4) {
+  font-weight: 800;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(5),
+.lineUp .sabado .sabadoLineUp li:nth-child(6),
+.lineUp .sabado .sabadoLineUp li:nth-child(7),
+.lineUp .sabado .sabadoLineUp li:nth-child(8), .lineUp .sabado .domingoLineUp li:nth-child(5),
+.lineUp .sabado .domingoLineUp li:nth-child(6),
+.lineUp .sabado .domingoLineUp li:nth-child(7),
+.lineUp .sabado .domingoLineUp li:nth-child(8), .lineUp .domingo .sabadoLineUp li:nth-child(5),
+.lineUp .domingo .sabadoLineUp li:nth-child(6),
+.lineUp .domingo .sabadoLineUp li:nth-child(7),
+.lineUp .domingo .sabadoLineUp li:nth-child(8), .lineUp .domingo .domingoLineUp li:nth-child(5),
+.lineUp .domingo .domingoLineUp li:nth-child(6),
+.lineUp .domingo .domingoLineUp li:nth-child(7),
+.lineUp .domingo .domingoLineUp li:nth-child(8) {
+  font-weight: 700;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(9), .lineUp .sabado .domingoLineUp li:nth-child(9), .lineUp .domingo .sabadoLineUp li:nth-child(9), .lineUp .domingo .domingoLineUp li:nth-child(9) {
+  font-weight: 600;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(10), .lineUp .sabado .domingoLineUp li:nth-child(10), .lineUp .domingo .sabadoLineUp li:nth-child(10), .lineUp .domingo .domingoLineUp li:nth-child(10) {
+  font-weight: 500;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(11),
+.lineUp .sabado .sabadoLineUp li:nth-child(12), .lineUp .sabado .domingoLineUp li:nth-child(11),
+.lineUp .sabado .domingoLineUp li:nth-child(12), .lineUp .domingo .sabadoLineUp li:nth-child(11),
+.lineUp .domingo .sabadoLineUp li:nth-child(12), .lineUp .domingo .domingoLineUp li:nth-child(11),
+.lineUp .domingo .domingoLineUp li:nth-child(12) {
+  font-weight: 400;
+}
+.lineUp .sabado .sabadoLineUp li:nth-child(13),
+.lineUp .sabado .sabadoLineUp li:nth-child(14), .lineUp .sabado .domingoLineUp li:nth-child(13),
+.lineUp .sabado .domingoLineUp li:nth-child(14), .lineUp .domingo .sabadoLineUp li:nth-child(13),
+.lineUp .domingo .sabadoLineUp li:nth-child(14), .lineUp .domingo .domingoLineUp li:nth-child(13),
+.lineUp .domingo .domingoLineUp li:nth-child(14) {
+  font-weight: 300;
+}
+.lineUp .sabado h2 {
+  left: -200px;
+  transform: translateY(-50%) rotate(-90deg);
+  color: #FFD700;
+}
+.lineUp .sabado .sabadoLineUp {
+  margin-left: 40px;
+  text-align: left;
+}
+.lineUp .domingo h2 {
+  position: absolute;
+  right: -213px;
+  transform: translateY(-50%) rotate(90deg);
+  color: #4682B4;
+}
+.lineUp .domingo .domingoLineUp {
+  position: relative;
+  text-align: right;
+}
+.lineUp .bannerButton {
+  background-image: url("../../assets/img/bg-footer-mb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.lineUp .bannerButton a {
+  position: relative;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #F5F5F5;
+  border: 3px solid #F5F5F5;
+  top: 15px;
+}
+
+/*# sourceMappingURL=index.css.map */

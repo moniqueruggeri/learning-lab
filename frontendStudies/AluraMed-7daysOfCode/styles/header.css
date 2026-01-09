@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0 16px 40px 16px;
+}
+
+.pic-1 {
+    width: 57px;
+    height: 57px;
+}
+
+.header-title {
+    font-size: var(--txt-g);
+    font-weight: var(--bold);
+    padding-bottom:8px ;
+}
+
+.header-subtitle {
+    font-size: var(--txt-p);
+    color: var(--text-sec-color);
+}

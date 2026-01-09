@@ -1,0 +1,67 @@
+@use '../variables/variables-colors' as vars
+@use '../mixins/mixins'
+
+.header
+    width: 100%
+
+
+    &-nav
+        display: flex
+        justify-content: space-between
+
+        @include mixins.mobile
+            width: 100%
+            flex-direction: column
+            align-items: center
+            justify-content: center
+   
+        i
+            color: vars.$white-normal
+            
+            @include mixins.mobile
+                margin-top: 16px
+                font-size: 34px
+
+    &-icons
+        display: flex
+        gap: 14px
+        margin: 24px
+
+        & a:hover
+            i
+                color: vars.$red-light
+                animation: translateY 0.8s
+
+    &-button-container
+        margin: 32px 24px
+
+    &-button
+        border: 1px solid vars.$white-normal
+        padding: 8px 24px
+        border-radius: 4px
+        color: vars.$white-normal
+        background-color: transpparent
+
+        @include mixins.mobile
+            display: none
+
+        &:hover
+            border: 1px solid vars.$red-light
+            background-color: vars.$red-light
+
+    &-logo
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 14px
+
+        img
+            @include mixins.mobile
+                width: 160px
+                margin-top: 46px
+
+@keyframes translateY
+    from
+        transform: translateY(0) scale(1)
+    to
+        transform: translateY(-8px) scale(1.1)

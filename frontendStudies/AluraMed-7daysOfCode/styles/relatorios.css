@@ -1,0 +1,59 @@
+.card-texts-graphic {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.graphic {
+    padding: 16px 0;
+}
+
+.legend {
+    font-size: 10px;
+    font-weight: var(--bold);
+}
+
+.round-circle {
+    border-radius: 100%;
+    border: 6px solid
+}
+
+.appointment-home-visit, .appointment-video-call {
+    display: flex;
+    gap: 8px;
+}
+
+.visit {
+    border-color: var(--vc-bt-color);
+}
+
+.video {
+    border-color: var(--adress-bt-color);
+}
+
+@media screen and (min-width:768px) {
+    .page-title {
+        width: 100%;
+    }
+
+    .page-relatorios {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+   .estatisticas {
+        width: 50%;
+    }
+
+    .card-estatisticas {
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .estatisticas {
+        width: 45%;
+    }
+}

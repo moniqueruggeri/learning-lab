@@ -1,0 +1,62 @@
+@use '../variables/_variables-colors' as colors
+@use '../variables/_variables-text' as text
+
+header
+    background-color: colors.$red
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem
+    transition: top 0.3s ease-in-out
+    position: fixed
+    width: 100vw
+    left: 0
+    z-index: 2
+
+    &.hidden
+        top: -6.25rem
+        transform: translateY(-100%)
+        pointer-events: none
+
+    &.visible
+        top: 0
+        transform: translateY(0)
+        pointer-events: auto
+
+        // img
+        //     width: 40%
+
+        .menuList
+            z-index: 100
+            flex-direction: column
+            position: absolute
+            top: 99%
+            right: 32px
+            background-color: colors.$red
+            padding: 1rem
+            color: colors.$white
+            text-transform: uppercase
+            font-family: text.$title-font
+            font-weight: text.$bold
+            align-items: center
+            display: none
+
+            &.open
+                display: flex
+
+                .menuItem
+                    border-bottom: 2px solid colors.$blue
+                    padding: 12px 0
+
+                    &:last-child
+                        border-bottom: none
+                        padding-bottom: 0
+
+                    &:first-child
+                        padding-top: 0
+
+        .menuIcon
+            font-size: text.$titles-text
+            color: colors.$white
+            position: relative
+            padding-right: 30px

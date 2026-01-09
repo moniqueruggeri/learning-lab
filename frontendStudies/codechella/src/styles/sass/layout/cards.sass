@@ -1,0 +1,28 @@
+@use '../variables/_variables-text' as text
+@use '../variables/_variables-colors' as color
+
+.cards
+
+    .card
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 2.5rem 2rem
+        gap: 1rem
+
+        .titles
+            display: flex
+            align-items: center
+            font-size: 2rem
+            gap: .5rem
+
+            i
+                font-size: 40px
+
+            h2
+                text-transform: uppercase
+                font-weight: text.$black
+                
+        .textParagraph
+            text-align: justify

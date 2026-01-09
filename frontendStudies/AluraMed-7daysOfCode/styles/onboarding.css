@@ -1,0 +1,14 @@
+.card .page-subtitle {
+    color: var(--text-sec-color);
+    line-height: 24px;
+}
+
+.start-button {
+    display: block; /* Torna o botão um elemento de bloco */
+    margin-top: 16px; /* Adiciona margem superior para espaçar o botão abaixo do texto */
+    box-sizing: border-box;
+}
+
+.texts-onbording {
+    gap: 8px;
+}

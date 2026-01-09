@@ -1,0 +1,20 @@
+.link-login {
+    color: var(--adress-bt-color);
+    font-weight: var(--bold);
+    text-decoration: underline;
+}
+
+.form-group {
+    background-color: white;
+    border: 1px solid var(--stroke-color);
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--text-sec-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+}

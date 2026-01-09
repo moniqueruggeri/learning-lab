@@ -1,0 +1,188 @@
+@use './variables/_variables-colors' as color
+@use './variables/_variables-text' as text
+
+.headerContainer
+    display: flex
+    position: relative
+    gap: 24px
+    padding-top: 50px
+
+    .imagesWrapper
+        display: flex
+        justify-content: flex-end
+
+    .buttonHeader
+        background-color: color.$yellow
+        color: color.$blue
+
+    .bannerDate
+        text-align: center
+        line-height: 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 110px
+
+        h1
+            color: color.$white
+            font-family: text.$title-font
+            font-size: text.$banner-text
+            white-space: nowrap
+
+            span
+                font-weight: text.$black
+
+        h2
+            font-size: text.$ingresso-titles
+            font-weight: text.$bold
+            color: color.$white
+            text-transform: uppercase
+
+.cards
+    .presentation
+        padding: 32px
+        display: flex
+        flex-direction: column
+        gap: 32px
+
+        p
+            text-align: justify
+
+        .textEmphasis
+            font-size: text.$ingresso-titles
+            font-family: text.$title-font
+            font-weight: text.$bold
+            text-align: right
+            color: color.$red
+
+            span
+                color: color.$blue
+
+    .cardTickets
+        box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.2)
+
+        .titles
+            color: color.$red
+
+        .button
+            background-color: color.$red
+            color: color.$white
+
+    .cardVip
+        color: color.$white
+        background-color: color.$red
+
+        .titles
+            color: color.$yellow
+
+        .button
+            background-color: color.$yellow
+            color: color.$red
+
+    .cardCamping
+        .titles
+            color: color.$blue
+
+        .button
+            background-color: color.$blue
+            color: color.$white
+
+.lineUp
+    // display: flex
+    // flex-direction: column
+    // gap: 1rem
+
+    img
+        color: color.$yellow
+        // width: 40%
+
+    .sabado, .domingo
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+
+        h2
+            z-index: -1
+            font-size: 5rem
+            font-family: text.$title-font
+            opacity: .7
+            font-weight: text.$black
+            text-transform: uppercase
+            position: absolute
+            white-space: nowrap
+            top: 50%
+
+        .sabadoLineUp, .domingoLineUp
+            margin-top: 10px
+            font-size: text.$ingresso-titles
+            display: flex
+            flex-direction: column
+            gap: 16px
+
+            li:nth-child(1),
+            li:nth-child(2)
+                font-weight: text.$black
+
+            li:nth-child(3),
+            li:nth-child(4)
+                font-weight: text.$extra-bold
+
+            li:nth-child(5),
+            li:nth-child(6),
+            li:nth-child(7),
+            li:nth-child(8)
+                font-weight: text.$bold
+
+            li:nth-child(9)
+                font-weight: text.$semibold
+
+            li:nth-child(10)
+                font-weight: text.$medium
+
+            li:nth-child(11),
+            li:nth-child(12)
+                font-weight: text.$regular
+
+            li:nth-child(13),
+            li:nth-child(14)
+                font-weight: text.$light
+
+    .sabado
+        h2
+            left: -200px
+            transform: translateY(-50%) rotate(-90deg)
+            color: color.$yellow
+
+        .sabadoLineUp
+            margin-left: 40px
+            text-align: left
+
+    .domingo
+        h2
+            position: absolute
+            right: -213px
+            transform: translateY(-50%) rotate(90deg)
+            color: color.$blue
+
+        .domingoLineUp
+            position: relative
+            text-align: right
+
+    .bannerButton
+        background-image: url('../../assets/img/bg-footer-mb.png')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 70px 32px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+
+        a
+            position: relative
+            background-color: rgba(51, 51, 51, .5)
+            color: color.$white
+            border: 3px solid color.$white
+            top: 15px

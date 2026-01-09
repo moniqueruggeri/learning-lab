@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões Ativos com CSS</title>
+    <style>
+        /* Estilizar os botões */
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            /* Cor de fundo padrão */
+            color: #fff;
+            /* Cor do texto padrão */
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        /* Estilizar os botões quando clicados */
+        .btn:active {
+            background-color: #0056b3;
+            /* Cor de fundo quando clicado */
+        }
+
+        /* Estilizar os botões quando focados */
+        .btn:focus {
+            outline: none;
+            /* Remover contorno padrão ao focar */
+            box-shadow: 0 0 5px #007bff;
+            /* Adicionar sombra ao focar */
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Botão 1</button>
+    <button class="btn">Botão 2</button>
+    <button class="btn">Botão 3</button>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/* Cores */
+/* Fonts */
+/* Pesos */
+/* Tamnanhos */
+.footer {
+  background-color: #FF4500;
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .socialMediaIcons {
+  display: flex;
+  font-size: 22px;
+  color: #F5F5F5;
+  gap: 8px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,79 @@
+.menu-list {
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    filter: drop-shadow(0 -1px 3px #46464625);
+    position: fixed;
+    top: 92%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 32px;
+    padding: 16px 0;
+    /* margin-left: auto; */
+}
+
+
+.menu-link {
+    cursor: pointer;
+    font-size: var(--txt-pp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: var(--text-main-color);
+    opacity: 30%;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.consultas {
+    background-image: url(/images/calendario-icone.svg); /* Defina o ícone neutro para Consultas */
+}
+
+.clientes {
+    background-image: url(/images/clientes-icone.svg);
+}
+
+.relatorios {
+    background-image: url(/images/relatorios-icone.svg);
+}
+
+.menu {
+    background-image: url(/images/menu-icone.svg);
+}
+
+.ativo .consultas {
+    background-image: url(/images/calendario-icone-active.svg);
+}
+
+.ativo .clientes {
+    background-image: url(/images/clientes-icone-active.svg);
+}
+
+.ativo .relatorios {
+    background-image: url(/images/relatorios-icone-active.svg);
+}
+
+.ativo .menu {
+    background-image: url(/images/menu-icone-active.svg);
+}
+
+.menu-link:focus,
+.menu-link:active {
+    color: var(--adress-bt-color);
+    opacity: 100%;
+}
+
+.ativo {
+    color: var(--adress-bt-color);
+    opacity: 100%;
+}
+
+@media screen and (min-width: 768px) {
+ 
+}

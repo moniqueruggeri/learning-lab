@@ -1,0 +1,37 @@
+@use '../../style'
+
+.bookFormat
+    border-radius: 8px
+    line-height: 16px
+    font-family: style.$mainFont
+
+    &.default
+        padding: 4px 52px
+
+    &.small
+        padding: 4px 24px
+
+    & p:first-child
+        font-size: style.$txtPP
+
+    & div
+        line-height: 8px
+
+    & div p:first-child
+        font-size: style.$txtM
+        font-weight: style.$bold
+
+    &.select
+        background: style.$mainGradient
+        color: style.$buttonTextColor
+        border: none
+
+    &.inactive
+        background: none
+        color: style.$mainOrange
+        border: solid 2px style.$mainOrange
+
+        & div p:nth-child(2)
+            color: style.$mainTextColor
+            opacity: 50%
+            

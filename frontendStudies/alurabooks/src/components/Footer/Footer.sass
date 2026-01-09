@@ -1,0 +1,40 @@
+@use '../../style'
+@use '../../_mixins'
+
+footer
+    background-color: style.$footer
+    padding: 16px 24px
+    border-top: 1px solid #858585
+
+    @include mixins.respond(tablet)
+        @include mixins.display ($direction: row, $align: baseline, $justify: space-between, $gap: 16px )
+        padding: 56px 24px
+
+        p:first-child
+            font-size: style.$txtGG
+
+        @include mixins.respond(desktop)
+            @include mixins.display ($direction: row , $justify: center, $gap: 121px)
+
+    .footerLinks
+        display: none
+
+        @include mixins.respond(tablet)
+            @include mixins.display ($direction:row, $justify:space-evenly , $gap:16px )
+
+            .education, .onlineEducation, .community
+                @include mixins.display ($direction: column, $gap: 16px)
+
+                @include mixins.respond(desktop)
+                    border-left: solid 1px #000
+
+                .title
+                    text-transform: uppercase
+                    color: #858585
+
+                .item
+                    @include mixins.display ($direction: row, $align: center, $gap:8px )
+                    font-size: style.$txtPP
+
+        @include mixins.respond(desktop)
+            gap: 188px

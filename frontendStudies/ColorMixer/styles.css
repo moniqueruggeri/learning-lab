@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+input {
+    background-color:#222 ;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input:last-of-type {
+    background-color: #ffffff;
+    color: #222;
+    border-color: 1px solid #fff;
+}
+
+span {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid #222;
+}

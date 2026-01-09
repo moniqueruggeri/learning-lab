@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu active focus</title>
+    <style>
+        .menu {
+            background-color: white;
+            border-radius: 12px 12px 0 0;
+            filter: drop-shadow(0 -1px 3px #46464625);
+            position: fixed;
+            top: 91%;
+            width: 100%;
+            z-index: 5;
+        }
+
+        .menu-list {
+            display: flex;
+            justify-content: space-around;
+            padding: 16px;
+        }
+
+        .menu-bt {
+            font-size: var(--txt-pp);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            color: var(--text-main-color);
+            opacity: 30%;
+        }
+
+        .menu-bt:focus,
+        .menu-bt:active {
+            color: var(--adress-bt-color);
+            opacity: 100%;
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+        }
+
+        .consultas-icon {
+            background-image: url(images/calendario-icone.svg);
+        }
+
+        .consultas-icon:active,
+        .consultas-icon:focus {
+            background-image: url(images/calendario-icone-active.svg);
+        }
+
+        .clientes-icon {
+            background-image: url(images/clientes-icone.svg);
+        }
+
+        .clientes-icon:focus,
+        .clientes-icon:active {
+            background-image: url(images/clientes-icone-active.svg);
+        }
+
+        .relatorios-icon {
+            background-image: url(images/relatorios-icone.svg);
+        }
+
+        .relatorios-icon:active,
+        .relatorios-icon:focus {
+            background-image: url(images/relatorios-icone-active.svg);
+        }
+
+        .menu-icon {
+            background-image: url(images/menu-icone.svg);
+        }
+
+        .menu-icon:active,
+        .menu-icon:focus {
+            background-image: url(images/menu-icone-active.svg);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <button class="menu-bt">
+                    <span class="icon consultas-icon"></span>
+                    <span class="menu-txt">Consultas</span>
+                </button>
+            </li>
+            <li class="menu-item">
+                <button class="menu-bt">
+                    <span class="icon clientes-icon"></span>
+                    <span class="menu-txt">Clientes</span>
+                </button>
+            </li>
+            <li class="menu-item">
+                <button class="menu-bt">
+                    <span class="icon relatorios-icon"></span>
+                    <span class="menu-txt">Relatórios</span>
+                </button>
+            </li>
+            <li class="menu-item">
+                <button class="menu-bt">
+                    <span class="icon menu-icon"></span>
+                    <span class="menu-txt">Menu</span>
+                </button>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+.header {
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header-nav i {
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .header-nav i {
+    margin-top: 16px;
+    font-size: 34px;
+  }
+}
+.header-icons {
+  display: flex;
+  gap: 14px;
+  margin: 24px;
+}
+.header-icons a:hover i {
+  color: #d34040;
+  animation: translateY 0.8s;
+}
+.header-button-container {
+  margin: 32px 24px;
+}
+.header-button {
+  border: 1px solid #ffffff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: transpparent;
+}
+@media (max-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+.header-button:hover {
+  border: 1px solid #d34040;
+  background-color: #d34040;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+@media (max-width: 768px) {
+  .header-logo img {
+    width: 160px;
+    margin-top: 46px;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.bg-home {
+  position: relative;
+}
+.bg-home::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+.bg-home .hero {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  color: #ffffff;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+@media (max-width: 768px) {
+  .bg-home .hero {
+    min-height: 60vh;
+  }
+}
+.bg-home .hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 948px;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .bg-home .hero h1 {
+    font-size: 34px;
+    padding: 0 14px;
+    width: 100%;
+  }
+}
+.bg-home .hero p {
+  text-align: center;
+  margin: 14px 0;
+  padding-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .bg-home .hero p {
+    font-size: 14px;
+  }
+}
+.bg-home .hero .button-contact {
+  padding: 14px 28px;
+  color: #ffffff;
+  background-color: #D94140;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+.bg-home .hero .button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+.about {
+  background-color: #06121E;
+  overflow: hidden;
+  color: #ffffff;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+.about-content img {
+  max-width: 570px;
+}
+.about-content div {
+  flex: 1;
+}
+.about-description h2 {
+  font-size: 34px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.about-description p {
+  margin-bottom: 14px;
+  line-height: 150%;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 102px 0;
+  gap: 44px;
+}
+.services-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.services-texts h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+}
+.services-texts p {
+  width: 60%;
+  margin: auto;
+}
+.services-item-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  background-color: #ffffff;
+  border-radius: 0 0 16px 16px;
+  z-index: 2;
+}
+.services-item-text .item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.services-item-text .price {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #D94140;
+  padding: 14px;
+  border-radius: 8px;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+}
+.services-list-item {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(2px 8px 10px rgba(0, 0, 0, 0.4));
+}
+.services-list-item:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.map {
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  gap: 40px;
+  padding: 32px 0;
+}
+.footer-icons {
+  display: flex;
+  gap: 14px;
+}
+.footer-icons i {
+  color: #ffffff;
+}
+.footer p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 2;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+@media (max-width: 768px) {
+  .btn-whatsapp img {
+    max-width: 64px;
+  }
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+.btn-whatsapp .tool-tip {
+  visibility: hidden;
+  position: absolute;
+  width: 170px;
+  border-radius: 4px;
+  top: 20px;
+  left: -180px;
+  padding: 4px;
+  background-color: #232224;
+  color: #ffffff;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tool-tip {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #06121E;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

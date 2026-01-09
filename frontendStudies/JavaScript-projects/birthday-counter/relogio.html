@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Counter</title>
+    <link rel="stylesheet" href="relogio.css">
+</head>
+<body>
+    <div class="text">
+        <h1>This is how much time is left until your birthday</h1>
+        <img src="/img/bday-emojji.svg" alt="">
+    </div>
+    <div class="clock">
+        <div>
+            <span class="months">00</span>
+            <span class="tempo">Months</span>
+        </div>
+        <div>
+            <span class="days">00</span>
+            <span class="tempo">Days</span>
+        </div>
+        <div>
+            <span class="hours">00</span>
+            <span class="tempo">Hours</span>
+        </div>
+    </div>
+
+    <div class="modal">
+        <form id="birthday-form">
+            <label for="birthday">Insert your birthday</label>
+            <input type="date" name="birthday" id="birthday" required>
+            <input type="submit" name="send" id="submit">
+        </form>
+    </div>
+    
+    <script src="relogio.js"></script>
+</body>
+</html>

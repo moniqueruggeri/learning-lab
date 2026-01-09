@@ -1,0 +1,27 @@
+@use './variables/_variables-colors' as color
+@use './variables/_variables-text' as text
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap)
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons)
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css)
+
+@import url(../css/reset.css)
+@import "layout/footer"
+@import "layout/menu"
+@import "layout/buttons"
+@import "layout/cards"
+@import "index"
+@import "layout/banners"
+
+
+body
+    font-family: text.$title-font
+    font-size: text.$normal-text
+    color: color.$grey
+    background-color: color.$gray-bg
+    line-height: 1.1875rem
+    overflow-x: hidden
+    width: 100%
+
+

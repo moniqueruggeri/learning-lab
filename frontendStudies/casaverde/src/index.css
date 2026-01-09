@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("./img/bg-img-1.png"), url("./img/bg-img-2.png"); /* Defina as duas imagens */
+  background-position: center top; /* Defina a posição de cada imagem */
+  background-size: cover; /* Controle o tamanho de cada imagem */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

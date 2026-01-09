@@ -1,0 +1,44 @@
+@use './_mixins'
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap')
+
+
+$mainFont: 'Poppins', sans-serif
+
+$mainGradient: linear-gradient(90deg, #002F52, #326589)
+$mainOrange: #EB9B00
+$mainBlue: #002F52
+
+$shadowOrange: #B87900
+
+$primaryLightGrey: #A4A4A4
+$secundaryLightGrey: #c4c4c4
+
+$footer: #f9f9f9
+
+$mainTextColor: #000
+$buttonTextColor: #fff
+
+$bold: 700
+
+$txtPP: 12px
+$txtP: 14px
+$txtM: 16px
+$txtG: 18px
+$txtGG: 24px
+
+body
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+    @include mixins.display ($justify: space-between, $align: stretch)
+    font-family: $mainFont
+    
+    p
+        margin: 0
+
+    ul
+        list-style: none

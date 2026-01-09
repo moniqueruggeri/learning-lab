@@ -1,0 +1,51 @@
+[
+    { 
+        "id": 1, 
+        "nome": "Camiseta Conforto", 
+        "img": "card-camiseta.png", 
+        "alt":"Rapaz caucasiano, usando touca preta e camiseta amarela mostarda, com uma parede de cimento ao fundo", 
+        "description":"Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex." ,
+        "price": "R$ 70,00"
+    },
+    { 
+        "id": 2, 
+        "nome": "Calça Alfaiataria", 
+        "img": "card-calca.png", 
+        "alt":"Rapaz caucasiano, usando touca preta e camiseta amarela mostarda, com uma parede de cimento ao fundo", 
+        "description":"ModeloWide Leg alfaiataria em linho. Uma peça pra vida toda." ,
+        "price": "R$ 180,00"
+    },
+    {
+        "id": 3, 
+        "nome": "Tênis Chuncky", 
+        "img": "card-tenis.png", 
+        "alt":"Rapaz caucasiano, usando touca preta e camiseta amarela mostarda, com uma parede de cimento ao fundo", 
+        "description":"Snicker casual com solado mais alo e modelagem robusta. Modelo unissex." ,
+        "price": "R$ 250,00"
+    },
+    {
+        "id": 4, 
+        "nome": "Jaqueta Jeans", 
+        "img": "card-jaqueta.png", 
+        "alt":"Rapaz caucasiano, usando touca preta e camiseta amarela mostarda, com uma parede de cimento ao fundo", 
+        "description":"Modelo unissex oversized com gola de camurça. Atemporal e autêntica." ,
+        "price": "R$ 150,00"
+    },
+    {
+        "id": 5, 
+        "nome": "Óculos Redondo", 
+        "img": "card-oculos.png", 
+        "alt":"Rapaz caucasiano, usando touca preta e camiseta amarela mostarda, com uma parede de cimento ao fundo", 
+        "description":"Armação metálica em grafite com lentes arredondadas. Sem erro." ,
+        "price": "R$ 120,00"
+    },
+    {
+        "id": 6, 
+        "nome": "Bolsa coringa", 
+        "img": "card-bolsa.png", 
+        "alt":"Rapaz caucasiano, usando touca preta e camiseta amarela mostarda, com uma parede de cimento ao fundo", 
+        "description":"Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida." ,
+        "price": "R$ 120,00"
+    }
+
+]

@@ -1,0 +1,22 @@
+.button-style {
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    font-weight: var(--medium);
+    color: white;
+    width: 100%;
+
+}
+
+.video-call {
+    background-color: var(--vc-bt-color);
+}
+
+.audio-call {
+    border: 1px solid var(--stroke-color);
+    color: var(--text-main-color);
+}
+
+.see-adress {
+    background-color: var(--adress-bt-color);
+}

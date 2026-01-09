@@ -1,0 +1,45 @@
+.header-pacientes {
+    margin-bottom: 8px;
+}
+
+.card-contact-patient {
+    align-items: center;
+}
+
+.card-texts-contact-patient {
+    gap: 10px
+}
+
+.pic-6, .pic-7, .pic-8, .pic-9, .pic-10, .pic-11 {
+    width: 40px;
+    height: 40px;
+}
+
+.pic-6 {
+    background-image: url('/images/perfil-6.jpg');
+}
+
+.pic-7 {
+    background-image: url(/images/perfil-7.jpg);
+}
+
+.pic-8 {
+    background-image: url(/images/perfil-8.jpg);
+}
+
+.pic-9 {
+    background-image: url(/images/perfil-9.jpg);
+}
+
+.pic-10 {
+    background-image: url(/images/perfil-10.jpg);
+}
+
+.pic-11 {
+    background-image: url(/images/perfil-11.jpg);
+}
+
+.icon-chat {
+    margin-left: auto;
+    padding-right: 8px;
+}

@@ -1,0 +1,76 @@
+@use '../../style'
+@use '../../_mixins'    
+
+.bookCard
+    background-color: #fff
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3))
+    padding: 16px
+    border-radius: 10px
+    @include mixins.display ($direction:column, $gap: 16px )
+
+    @include mixins.respond(tablet)
+        @include mixins.display ($direction: row, $justify: space-between)
+        padding: 24px
+    
+    @include mixins.respond(desktop)
+        padding: 48px
+    
+
+    & .book
+        @include mixins.display ($direction: column, $gap: 8px )
+
+        & p:first-child:not(.price p)
+            color: style.$mainOrange
+            font-weight: style.$bold
+
+    & .cardTitle
+        @include mixins.respond(desktop)
+            font-size: 32px
+        
+
+    & .bookTitle
+        font-size: style.$txtG
+        color: style.$mainBlue
+
+    & .price
+        @include mixins.display ($direction: row, $align: baseline, $justify:left ,$gap: 12px )
+
+        @include mixins.respond(tablet)
+            @include mixins.display ($direction: column)
+            line-height: 32px
+            
+        
+        & p
+            color: rgba(0, 0, 0, 0.5)
+
+
+        & .bookPrice
+            color: style.$mainBlue
+            font-weight: 900
+
+            @include mixins.respond(tablet)
+                font-size: 36px
+            
+
+    & .buy
+        @include mixins.display ($direction:row, $align: center, $justify: space-between )
+        @include mixins.respond(tablet)
+            @include mixins.display ($direction: column, $justify: space-between, $align:flex-end )
+
+        .icons
+            @include mixins.display ($direction:row, $gap: 16px )
+            color: style.$mainBlue
+
+            @include mixins.respond(tablet)
+                @include mixins.display ($direction: row-reverse, $gap: 16px)
+                
+            i
+                font-size: 40px
+
+                @include mixins.respond(tablet)
+                    font-size: 52px
+
+                @include mixins.respond(desktop)
+                    font-size: 32px
+                
+                

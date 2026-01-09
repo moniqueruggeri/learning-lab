@@ -1,0 +1,93 @@
+<html>
+  <head> </head>
+
+  <body>
+    <script type="text/javascript">
+      img1 = new Image();
+      img1.src = "images/gatinho1.png";
+      img2 = new Image();
+      img2.src = "images/gatinho2.png";
+      img3 = new Image();
+      img3.src = "images/gatinho3.png";
+      img4 = new Image();
+      img4.src = "images/gatinho4.png";
+
+      var posicao = "0";
+
+      function mais() {
+        if (posicao == "3") {
+          alert("O gatinho morreu");
+          return;
+        }
+
+        if (posicao == "2") {
+          um.src = img4.src;
+          posicao++;
+          return;
+        }
+
+        if (posicao == "1") {
+          um.src = img3.src;
+          posicao++;
+          return;
+        }
+
+        if (posicao == "0") {
+          um.src = img2.src;
+          posicao++;
+          console.log(getValue.posicao)
+          return;
+        }
+      }
+
+      function menos() {
+        if (posicao == "0") {
+          alert("O gatinho ainda não nasceu!");
+          console.log(posicao)
+          return;
+        }
+        if (posicao == "1") {
+          um.src = img1.src;
+          posicao--;
+          console.log(posicao)
+          return;
+        }
+        if (posicao == "2") {
+          um.src = img2.src;
+          posicao--;
+          console.log(posicao)
+          return;
+        }
+        if (posicao == "3") {
+          um.src = img3.src;
+          posicao--;
+          console.log(posicao)
+          return;
+        }
+        if (posicao == "4") {
+          um.src = img4.src;
+          posicao--;
+          console.log(posicao)
+          return;
+        }
+      }
+    </script>
+
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="-" onclick="menos()" ; />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="+" onclick="mais()" ; />
+
+    <br /><br /><br />
+    <img
+      src="images/gatinho1.png" 
+      border="0"
+      width="400"
+      height="300"
+      name="um"
+    />
+  </body>
+</html>

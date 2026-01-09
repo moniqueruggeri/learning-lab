@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste tag a</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <style>
+        .menu {
+            background-color: white;
+            border-radius: 12px 12px 0 0;
+            filter: drop-shadow(0 -1px 3px #46464625);
+            position: fixed;
+            top: 91%;
+            width: 100%;
+            z-index: 5;
+        }
+
+        .menu-list {
+            display: flex;
+            justify-content: space-around;
+            padding: 16px;
+        }
+
+        .menu-bt {
+            font-size: var(--txt-pp);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            color: var(--text-main-color);
+            opacity: 30%;
+            text-decoration: none;
+            /* Remover sublinhado padrão dos links */
+        }
+
+
+        /* .icon {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+        } */
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+        }
+
+        .consultas-icon {
+            background-image: url('/images/calendario-icone.svg');
+        }
+
+        .consultas-icon.active {
+            background-image: url('/images/calendario-icone-active.svg');
+        }
+
+        /* .consultas-icon {
+            background-image: url(/images/calendario-icone.svg);
+        }
+
+        .clientes-icon {
+            background-image: url(/images/clientes-icone.svg);
+        }
+
+        .relatorios-icon {
+            background-image: url(/images/relatorios-icone.svg);
+        }
+
+        .menu-icon {
+            background-image: url(/images/menu-icone.svg);
+        }
+
+        .menu-bt:focus .consultas-icon,
+        .menu-bt:active .consultas-icon {
+            background-image: url(/images/calendario-icone-active.svg);
+        }
+
+        .menu-bt:focus .clientes-icon,
+        .menu-bt:active .clientes-icon {
+            background-image: url(/images/clientes-icone-active.svg);
+        }
+
+        .menu-bt:focus .relatorios-icon,
+        .menu-bt:active .relatorios-icon {
+            background-image: url(/images/relatorios-icone-active.svg);
+        }
+
+        .menu-bt:focus .menu-icon,
+        .menu-bt:active .menu-icon {
+            background-image: url(/images/menu-icone-active.svg);
+        }
+
+        .menu-bt:focus,
+        .menu-bt:active {
+            color: var(--adress-bt-color);
+            opacity: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="/consultas.html" class="menu-bt">
+                    <span class="icon consultas-icon"></span>
+                    <span class="menu-txt">Consultas</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-bt">
+                    <span class="icon clientes-icon"></span>
+                    <span class="menu-txt">Clientes</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-bt">
+                    <span class="icon relatorios-icon"></span>
+                    <span class="menu-txt">Relatórios</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-bt">
+                    <span class="icon menu-icon"></span>
+                    <span class="menu-txt">Menu</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <script>
+        // Adiciona event listener de clique para cada link
+        document.querySelectorAll('.menu-bt').forEach(item => {
+            item.addEventListener('click', event => {
+                // Remove a classe 'active' de todos os ícones
+                document.querySelectorAll('.icon').forEach(icon => {
+                    icon.classList.remove('active');
+                });
+                // Adiciona a classe 'active' ao ícone do link clicado
+                event.currentTarget.querySelector('.icon').classList.add('active');
+            });
+        });
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            let currentPage = window.location.pathname;
+            let activeIcon;
+
+            if (currentPage.includes('consultas.html')) {
+                activeIcon = document.getElementById('consultas-link').querySelector('.icon');
+            }
+
+            // Remove a classe 'active' de todos os ícones
+            document.querySelectorAll('.icon').forEach(icon => {
+                icon.classList.remove('active');
+            });
+
+            // Adiciona a classe 'active' ao ícone correspondente
+            if (activeIcon) {
+                activeIcon.classList.add('active');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

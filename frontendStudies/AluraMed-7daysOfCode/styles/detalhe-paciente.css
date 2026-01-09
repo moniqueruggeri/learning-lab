@@ -1,0 +1,99 @@
+.header-page {
+    background-color: white;
+    padding: 16px;
+    display: flex; /* Adicionando display flex para usar flexbox */
+    align-items: center; /* Centralizando verticalmente os itens */
+}
+
+.back-icon {
+    padding-left: 32px;
+    font-weight: var(--medium);
+    font-size: var(--txt-m);
+    display: flex; /* Usando flexbox para alinhar itens horizontalmente */
+    align-items: center; /* Centralizando verticalmente os itens */
+    position: relative;
+}
+
+.back-icon::before {
+    content: "";
+    position: absolute;
+    left: 0; /* Alinha o ícone à esquerda do span */
+    top: 50%; /* Centraliza verticalmente o ícone */
+    transform: translateY(-50%); /* Ajusta a posição vertical do ícone */
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/back-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.header-details {
+    margin: 16px 16px 24px 16px;
+}
+
+.estatisticas {
+    display: flex;
+    padding-top: 8px;
+    gap: 16px;
+}
+
+.estatisticas-paciente {
+    margin: 0 16px;
+}
+
+.card-estatisticas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 16px;
+    width: 50%;
+}
+
+.grafico {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--txt-m);
+    width: 100px; /* Largura do elemento */
+    height: 100px; /* Altura do elemento */
+    border: 8px solid;
+    border-radius: 50%;
+}
+
+.grafico-nro-consultas {
+    border-color: var(--adress-bt-color);
+}
+
+.grafico-tempo-consultas {
+    border-color: var(--vc-bt-color);
+}
+
+.nro-destaque {
+    font-size: 32px;
+    font-weight: var(--bold);
+}
+
+.texto-destaque {
+    color: var(--text-sec-color);
+}
+
+.notes-descricao {
+    color: var(--text-sec-color);
+    line-height: 24px;
+}
+
+.link-ver-mais {
+    font-weight: var(--bold);
+    color: var(--adress-bt-color);
+}
+
+.endereco-descricao {
+    font-size: var(--txt-pp);
+}
+
+.consultas-title {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,64 @@
+/* Cores */
+/* Fonts */
+/* Pesos */
+/* Tamnanhos */
+header {
+  background-color: #FF4500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: top 0.3s ease-in-out;
+  position: fixed;
+  width: 100vw;
+  top: -100px;
+  left: 0;
+  z-index: 2;
+}
+header.hidden {
+  top: -6.25rem;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+header.visible {
+  top: 0;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+header.visible .menuList {
+  z-index: 100;
+  flex-direction: column;
+  position: absolute;
+  top: 99%;
+  right: 32px;
+  background-color: #FF4500;
+  padding: 1rem;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  align-items: center;
+  display: none;
+}
+header.visible .menuList.open {
+  display: flex;
+}
+header.visible .menuList.open .menuItem {
+  border-bottom: 2px solid #4682B4;
+  padding: 12px 0;
+}
+header.visible .menuList.open .menuItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+header.visible .menuList.open .menuItem:first-child {
+  padding-top: 0;
+}
+header.visible .menuIcon {
+  font-size: 2rem;
+  color: #F5F5F5;
+  position: relative;
+  padding-right: 30px;
+}
+
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,101 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: rgb(28, 28, 28);
+    background-image: url(/img/grade.svg);
+    background-blend-mode: soft-light;
+}
+
+.todo-list-container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 16px;
+}
+
+.todo-list-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgba(255, 165, 0, .1);
+    font-size: 24px;
+    gap: 16px;
+    padding: 16px;
+}
+
+.todo-list-title {
+    display: flex;
+    align-items: center;
+}
+
+.todo-list-title h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.todo-list-title img {
+    height: 48px;
+}
+
+.todo_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.todo-list-content > input {
+    width: 100%;
+    background-color: transparent;
+}
+
+.todo_item {
+    background-color: orange;
+    display: flex;
+    border-radius: 8px;
+    padding: 8px 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo_item > input[type="button"] {
+    cursor: pointer;
+    background-color: #282828;
+    color: orange;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: 700;
+}
+
+.todo_item > input[type="button"]:hover {
+    background-color: white;
+}
+
+.todo_item > input[type="checkbox"]:checked + div{
+    text-decoration:line-through;
+    color: black;
+    font-weight: 900;
+}
+
+.todo_item div {
+    width: 80%;
+    font-size: 18px;
+}
+
+.todo_item:hover {
+    cursor: pointer;
+    background-color: rgb(216, 141, 3);
+    transform: all .5s ease;
+}
+
+@media screen and (min-width: 768px) {
+    .todo-list-container {
+        width: 60%;
+        margin: auto;
+        padding: 48px;
+    }
+}

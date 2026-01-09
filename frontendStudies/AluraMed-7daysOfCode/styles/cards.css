@@ -1,0 +1,137 @@
+.page-cards {
+    margin: 0 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background-color: white;
+    color: var(--text-main-color);
+    border-radius: 8px;
+    font-size: var(--txt-p);
+    padding: 16px;
+}
+
+.card-title {
+    font-size: var(--txt-p);
+    font-weight: var(--bold);
+}
+
+.card-subtitle {
+    color: var(--text-sec-color);
+    font-size: var(--txt-pp);
+}
+
+.card-header {
+    display: flex;
+    gap: 16px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.pic-2, .pic-3, .pic-4, .pic-5 {
+    width: 32px;
+    height: 32px;
+}
+
+.pic-2 {
+    background-image: url(/images/perfil-2.jpg);
+}
+
+.pic-3 {
+    background-image: url(/images/perfil-3.jpg);
+}
+
+.pic-4 {
+    background-image: url(/images/perfil-4.jpg);
+}
+
+.pic-5 {
+    background-image: url(/images/perfil-5.jpg);
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+}
+
+.appointment-time {
+    font-weight: var(--medium);
+    padding: 16px 0;
+    font-size: var(--txt-pp);
+}
+
+hr {
+    opacity: 0.5;
+    background-color: var(--text-main-color);
+    margin: 12px 0 0 0;
+}
+
+.chat-icon {
+    background-image: url(/images/chat.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: auto;
+    width: 32px;
+    height: 32px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 8px;
+    text-align: center;
+}
+
+.cam, .pin {
+    padding-left: 24px;
+    position:relative;
+    background-repeat: no-repeat;
+    height:16px;
+}
+
+.cam {
+    background-image: url(/images/camera-icone-s.svg);
+}
+
+.pin {
+    background-image: url(/images/pin-icone-s.svg);    
+}
+
+@media screen and (min-width: 768px) {
+    .page-cards {
+        flex-direction: row; /* Altera a direção do flex container para linha */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+        justify-content: space-between; /* Distribui os cards igualmente ao longo do contêiner*/
+        margin: 36px;
+    }
+
+    .card {
+        flex-basis: calc(45% - 16px); /* Largura de 50% do contêiner, menos a margem */
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .page-cards {
+        justify-content: space-between; /* Distribui os cartões uniformemente na linha */
+        gap: 45px 48px;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc(27% - 16px); /* Define a largura dos cartões para 33.33% da largura da linha, com espaço entre eles */
+    }
+
+    .page-cards .card {
+        margin: 0 18px;
+    }
+  }
+  

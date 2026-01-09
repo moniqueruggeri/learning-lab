@@ -1,0 +1,51 @@
+.headerBanner {
+    background-image: url("../img/header-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: -2;
+    height: 40vh;
+    position: absolute;
+}
+ 
+.headerIcons {
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    position: relative;    
+    padding: 48px;
+}
+
+.headerIcons div {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.headerLogo {
+    width: auto;
+    height: 30px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .headerBanner {
+        width: 64vw;
+    }
+
+    .headerLogo {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .headerBanner {
+        width: 48vw;
+        height: 64%;
+    }
+
+    .headerIcons {
+        margin: auto;
+        padding: 48px 160px;
+    }
+}

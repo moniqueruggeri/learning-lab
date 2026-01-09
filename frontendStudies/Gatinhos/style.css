@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+h2 {
+    position: absolute;
+    align-self: center;
+    margin: auto;
+    color: white;
+    font-size: 40px;
+    padding-top: 32px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+button {
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 100px;
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    color: rosybrown;
+    cursor: pointer;
+}
+
+.img {
+    background-image: url("/images/gatinho1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+h3 {
+    position: absolute;
+    color: rosybrown;
+    align-self: center;
+    bottom: 0;
+    font-size: 24px;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 24px;
+}

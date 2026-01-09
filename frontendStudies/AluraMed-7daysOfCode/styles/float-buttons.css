@@ -1,0 +1,128 @@
+.float-buttons {
+    position: relative;
+}
+
+.button-design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--adress-bt-color);
+    border-radius: 50%;
+    position: fixed;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    padding: 24px;
+    filter: drop-shadow(0 3px 6px #4894FF90);
+}
+
+.more-buttons-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: calc(100% + 10px); /* Alinha os botões à esquerda do botão "more" */
+    padding-left: 10px; /* Adiciona um espaço à esquerda dos botões */
+}
+
+.more-buttom {
+    top: 83%;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona transições */
+}
+
+.more-buttons-item {
+    position: relative;
+}
+
+.more-buttom-description {
+    display: inline-block;
+    position: absolute;
+    right: calc(100% + 16px);
+    top: 8px;
+    background-color: white;
+    font-size: var(--txt-pp);
+    font-weight: var(--medium);
+    border-radius: 2323px;
+    padding:8px;
+    white-space: nowrap; /* Evita que o texto seja quebrado em várias linhas */
+}
+
+.cam-buttom + .more-buttom-description,
+.pin-buttom + .more-buttom-description {
+    display: inline-block;
+}
+
+.cam-buttom {
+    top: 75%;
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.pin-buttom {
+    top: 67%;
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.float-buttons.active .cam-buttom,
+.float-buttons.active .pin-buttom {
+    visibility: visible; /* Exibe quando .float-buttons ativo */
+    /* opacity: 1; */
+}
+
+.float-buttons.active .more-buttom {
+    transform: scale(1.1); /* Escala levemente quando .float-buttons ativo */
+    background-color: rgba(9, 75, 151); /* Cor de fundo mais escura */    
+}
+
+/* Adiciona um atraso na animação */
+.float-buttons.active .cam-buttom {
+    /* animation-delay: 1s;  */
+    animation: fadeIn 0.5s forwards;
+}
+
+.float-buttons.active .pin-buttom {
+    /* animation-delay: 2s; */
+    animation: fadeIn 0.7s forwards;
+}
+
+.float-buttons::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidade de 0.5 */
+    z-index: 0;
+    pointer-events: none; /* Permite que os cliques passem pelo fundo */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s; /* Adiciona transição de opacidade */
+}
+
+.float-buttons.active::before {
+    opacity: 1; /* Torna o fundo visível quando .float-buttons ativo */
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+        visibility: hidden;
+    }
+}

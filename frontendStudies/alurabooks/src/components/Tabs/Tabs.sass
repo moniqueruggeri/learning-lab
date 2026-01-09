@@ -1,0 +1,25 @@
+@use '../../style'
+@use '../../_mixins' as *
+
+.tabs
+    @include display($direction: row, $align: flex-end)
+
+    .tabButtons
+        border: none
+        background-color: transparent
+        font-size: 20px
+        font-family: style.$mainFont
+        font-weight: style.$bold
+        padding: 8px 32px
+        
+        @include respond(desktop)
+            font-size: style.$txtGG
+    
+    .tabButtons.active
+        border-bottom: 2px solid style.$mainOrange
+        color: style.$mainBlue
+
+    .tabButtons.inactive
+        color: rgba(0, 0, 0, 0.54)
+        border-bottom: 1px solid style.$mainOrange
+        padding-bottom: 9px
