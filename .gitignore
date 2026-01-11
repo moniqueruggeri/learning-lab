@@ -1,0 +1,19 @@
+# Executáveis
+*.exe
+*.out
+*.bin
+
+# Objetos compilados
+*.o
+*.obj
+
+# Node / Frontend
+node_modules/
+dist/
+
+# Ambiente
+.env
+
+# VS Code / SO
+.vscode/
+.DS_Store
