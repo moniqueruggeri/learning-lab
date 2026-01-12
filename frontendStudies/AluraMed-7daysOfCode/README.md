@@ -1,19 +1,13 @@
-# AluraMed
+# AluraMed-7daysOfCode 🚀
 
-Este projeto foi desenvolvido como parte do desafio **#7daysOfCode** da Alura. Consiste em uma aplicação web construída com HTML, CSS e um pouco de JavaScript, utilizando como base as telas disponibilizadas no Figma.
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Study](https://img.shields.io/badge/Type-Study-blue)
+![Alura](https://img.shields.io/badge/Challenge-7DaysOfCode-purple)
 
-## Visão Geral 
-O objetivo deste projeto foi praticar habilidades de desenvolvimento web, especialmente focando em responsividade e design de interface. Foram utilizados os recursos disponíveis no Figma para criar uma aplicação que se adapta a diferentes tamanhos de tela e dispositivos.
+Projeto de estudos de **frontend** desenvolvido durante o desafio **7 Days of Code** da Alura.
 
-## Recursos 
-* HTML5 
-* CSS3 
-* JavaScript 
-* Design Responsivo 
-* Integração com Figma 
-
-## Telas do Figma 
-As telas do projeto foram desenvolvidas com base nas especificações disponíveis no Figma. Você pode conferir as telas e detalhes do design [neste link](https://www.figma.com/file/h1MdoIYdJOQdfyIjfULxUI/7days---Responsividade-(Copy)?type=design&node-id=0-1&mode=design&t=s15rUaoD14kTbTC8-0).
-
-## Autor
-Este projeto foi desenvolvido por **Monique Ruggeri** como parte do desafio #7daysOfCode da Alura.
+✨ **Tecnologias:** HTML, CSS e JavaScript  
+🎯 **Objetivo:** praticar conceitos fundamentais de frontend por meio de desafios diários.  
+📚 Parte da trilha de estudos da pasta `frontendStudies` deste repositório.
