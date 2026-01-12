@@ -1,15 +1,15 @@
-# learning-lab
-studies and tests 🧪
+# learning-lab 🚀
 
-This repository gathers my studies, experiments, 
-and practical exercises developed during classes, 
-courses, and independent studies.
+![Repo](https://img.shields.io/badge/Repository-learning--lab-blue)
+![Study](https://img.shields.io/badge/Type-Study-blue)
+![Dev](https://img.shields.io/badge/Domain-Development-lightgrey)
 
-🎯 Objective:
+Repositório de **estudos de desenvolvimento** com projetos de **frontend** e **backend**, organizados por pastas temáticas para praticar diferentes linguagens, ferramentas e conceitos.
 
-- Consolidate fundamentals
-- Test concepts in isolation
-- Document technical learning
+✨ **Tecnologias:** HTML, CSS, JavaScript, C, C++, COBOL (e outras conforme o projeto)  
+🎯 **Objetivo:** consolidar aprendizado por meio de projetos práticos e variados  
+📁 **Estrutura principal:**
+- `frontendStudies`: projetos de estudo em frontend  
+- `backendStudies`: projetos de estudo em backend
 
-⚠️ Note: This repository **does not represent final projects**, 
-but rather an environment for continuous learning.
+📌 Cada pasta interna contém projetos com READMEs individuais que explicam o objetivo e tecnologias usadas.
