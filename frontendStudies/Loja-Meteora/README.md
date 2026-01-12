@@ -1,31 +1,13 @@
-# 🪐 Loja Meteora
+# Loja-Meteora 🛍️
 
-**Loja Meteora** is a responsive e-commerce website built with React, focused on clean UI and usability.  
-It simulates a clothing store experience, showcasing products, categories, and a user-friendly layout — ideal for practicing component-based architecture and modern styling. 👗🛍️
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Study](https://img.shields.io/badge/Type-Study-blue)
+![Practice](https://img.shields.io/badge/Focus-Practice-green)
 
-## 🛠️ Technologies Used
+Projeto de estudos de **frontend** que simula uma **loja online** com interface visual para exibição de produtos e interações básicas.
 
-- ⚛️ **React**  
-- 🎨 **CSS3**  
-- 🧱 **HTML5**  
-- 📱 **Responsive Design**  
-
-## 📌 Project Status
-
-🛠️ **Building** – Fully functional layout with responsive components.  
-🧪 *Perfect for future improvements, such as shopping cart and login integration.*
-
-## 🎯 Key Features
-
-- Product grid and categories  
-- Responsive navigation bar and footer  
-- Themed visual style with emphasis on clean UX  
-- Developed from a Figma design
-
-## 🚀 Live Preview
-
-🔗 [https://loja-meteora.vercel.app](https://loja-meteora.vercel.app)
-
----
-
-🛒 *A simple but stylish storefront to practice real-world front-end development!*
+✨ **Tecnologias:** HTML, CSS e JavaScript  
+🎯 **Objetivo:** praticar estrutura de layout, grid de produtos e interatividade no frontend  
+📚 Parte da trilha de estudos da pasta `frontendStudies` deste repositório.
