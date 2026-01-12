@@ -1,31 +1,13 @@
-# 📚 AluraBooks
+# alurabooks 📚
 
-Welcome to **AluraBooks**, an e-commerce project focused on programming and tech books! 🚀  
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Study](https://img.shields.io/badge/Type-Study-blue)
+![Practice](https://img.shields.io/badge/Focus-Practice-green)
 
-## 🛠️ Technologies Used
+Projeto de estudos de **frontend** desenvolvido durante a imersão **Alura**, focado na criação da interface de uma livraria online com organização de livros e interatividade básica.
 
-- 🏗️ **HTML & CSS** – Initial structure and styling  
-- 🎨 **Sass** – For advanced styles and better organization  
-- ⚛️ **React** – To turn it into a dynamic SPA  
-- 🔧 **Back-end (coming soon)** – Planned for future development  
-
-## 📌 Project Status
-
-🔥 **In progress** – Started as a static site, now evolving into a full-stack application.
-
-✅ **Completed so far:**  
-- Initial layout with HTML and CSS  
-- Responsive design for multiple devices  
-
-🛠️ **Currently working on:**  
-- Migrating to React  
-- Adding interactive features  
-
-📍 **Next steps:**  
-- Build a back-end to manage products and orders  
-- Add login system and shopping cart  
-
-## 🚀 Live Preview
-
-You can check it out here:  
-🔗 [https://alurabooks-zeta-flame.vercel.app/](https://alurabooks-zeta-flame.vercel.app/)
+✨ **Tecnologias:** HTML, CSS e JavaScript  
+🎯 **Objetivo:** praticar layout, estrutura de lista de produtos e interatividade no frontend  
+📚 Parte da trilha de estudos da pasta `frontendStudies` deste repositório.
