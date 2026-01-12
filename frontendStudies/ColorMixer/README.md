@@ -1,38 +1,13 @@
-# 🎨 ColorMixer
+# ColorMixer 🎨
 
-A minimal JavaScript app that lets you mix two colors and instantly see the result.  
-A fun way to explore color blending using HEX codes and basic DOM manipulation.
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Study](https://img.shields.io/badge/Type-Study-blue)
+![Practice](https://img.shields.io/badge/Focus-Practice-green)
 
-## 🚀 Features
+Projeto de estudos de **frontend** que implementa um **misturador de cores** — uma interface onde você pode combinar duas cores e ver o resultado visual em tempo real (HTML, CSS e JavaScript).
 
-- Input fields for two HEX colors
-- Real-time preview of the mixed color
-- Simple, responsive UI
-
-## 🛠️ Built With
-
-- HTML5 + CSS3
-- JavaScript (Vanilla)
-
-## 🌍 **Live Preview**
-
-🔗 [Click here to view the project on Vercel](https://color-mixer-red.vercel.app/)
-
-## 💻 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/moniqueruggeri/ColorMixer.git
-
-2. Open index.html in your browser.
-
-That's it — no installation needed!
-
-## 💡 Purpose
-This was a small project to reinforce core JavaScript concepts like:
-
-- Event listeners
-- DOM manipulation
-- Working with color formats
-
-Feel free to test it and improve it! 🌈
+✨ **Tecnologias:** HTML, CSS e JavaScript  
+🎯 **Objetivo:** praticar lógica de manipulação do DOM, eventos e interatividade no frontend  
+📚 Parte da trilha de estudos da pasta `frontendStudies` deste repositório.
