@@ -1,40 +1,13 @@
-# 🐱 Gatinhos
+# Gatinhos 🐱
 
-A simple React project that fetches and displays random cat images using an external API.  
-Created to practice components, hooks, and API integration.
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Study](https://img.shields.io/badge/Type-Study-blue)
+![Practice](https://img.shields.io/badge/Focus-Practice-green)
 
-## 🚀 Features
+Projeto de estudos de **frontend** que apresenta o ciclo de vida de um gatinho com interatividade simples.
 
-- Fetches random cat images from an API
-- Button to get a new image
-- Responsive and minimal layout
-
-## 🛠️ Built With
-
-- [React](https://reactjs.org/)
-- JavaScript (ES6+)
-- HTML5 + CSS3
-
-## 🌍 **Live Preview**
-
-🔗 [Click here to view the project on Vercel](https://kittenlifecicle.vercel.app/)
-
-## 📦 How to Run Locally
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/moniqueruggeri/Gatinhos.git
-
-2. Install dependencies:
-   ```bash
-   npm install
-   
-3. Start the project:
-   ```bash
-   npm start
-
-## 💡 Purpose
-
-This project was built for practice while learning React and exploring how to consume APIs and handle component updates in a fun way.
-
-Feel free to contribute or suggest improvements!
+✨ **Tecnologias:** HTML, CSS e JavaScript  
+🎯 **Objetivo:** praticar estrutura de layout, manipulação do DOM e interatividade básica  
+📚 Parte da trilha de estudos da pasta `frontendStudies` deste repositório.
